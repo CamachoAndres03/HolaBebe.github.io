@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🧡Quieres ser mi novia🧡</title>
+  <style>
+    .body {
+      background-color: #F5B7B1 ;
+      text-align: center; 
+    }
+
+    .body__title {
+      color: white;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 412px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">🧡¿Quieres ser mi novia?🧡</h1>
+  <img src="https://img.wattpad.com/55bcd1a513841f3fc2a7d3294bfac57448b85ae9/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f37497358517279363279496e65513d3d2d32362e313539666631373431626261353165313835373038353838363133372e6a7067" alt="#" class="body__img" />
+  <br>
+  <button id="si">🥰SI🥰</button>
+  <button id="no">💔NO💔</button>
+
+  <script>
+    const vuttonSi = document.getElementById('si');
+    const vuttonNo = document.getElementById('no');
+
+    const somosNovios = () => {
+      alert('💞Sabia que si💞');
+      alert('😱¿Te la dedico mi cielo?😱');
+      location.href = 'https://youtu.be/BZTIsraLp4s';
+    };
+
+    const Noperro = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', somosNovios);
+    vuttonNo.addEventListener('mouseover', Noperro);
+  </script>
+          
+</body>
+<footer>
+            <p>Derechos reservados de Andres Camacho copyright © 2023 </p>
+</footer>
+</html>
